@@ -3,78 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Yash Agarwal — Finance, Accounting & Business Operations Resume">
 <title>Yash Agarwal | Resume</title>
 <style>
+:root{--navy:#172554;--blue:#2563eb;--cyan:#0891b2;--violet:#7c3aed;--ink:#172033;--muted:#657184;--line:#dfe5ef;--soft:#f4f7ff;--soft2:#f7f5ff}
 *{box-sizing:border-box}
-body{margin:0;background:#e9edf2;color:#20242b;font:12px/1.35 Arial,Helvetica,sans-serif}
-.paper{width:min(900px,calc(100% - 28px));margin:18px auto;background:#fff;padding:30px 36px;box-shadow:0 8px 30px #0002}
-header{text-align:center;border-bottom:2px solid #164f9e;padding-bottom:11px;margin-bottom:13px}
-h1{font-size:28px;letter-spacing:.5px;margin:0 0 3px;color:#172b4d}
-.contact{color:#66707d;font-size:11px;line-height:1.65}.contact a{color:inherit}
-h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:#164f9e;border-bottom:1px solid #d9dee6;padding-bottom:3px;margin:12px 0 6px}
+body{margin:0;background:linear-gradient(135deg,#edf3ff,#f7f5ff 55%,#eefafa);color:var(--ink);font:12px/1.36 Inter,Arial,Helvetica,sans-serif}
+.paper{width:min(920px,calc(100% - 28px));margin:18px auto;background:#fff;padding:27px 35px;box-shadow:0 18px 55px #1e2a5518;border:1px solid #e3e8f2;border-radius:18px;position:relative;overflow:hidden}
+.paper:before{content:"";position:absolute;left:0;top:0;right:0;height:5px;background:linear-gradient(90deg,var(--blue),var(--violet),var(--cyan))}
+header{display:flex;justify-content:space-between;gap:25px;align-items:center;border-bottom:1px solid var(--line);padding:5px 0 14px;margin-bottom:12px}
+.namebox{min-width:0}h1{font-size:31px;line-height:1;margin:0 0 7px;letter-spacing:-1px;color:var(--navy)}
+.tag{font-size:10px;text-transform:uppercase;letter-spacing:1.6px;font-weight:800;color:var(--blue)}
+.contact{text-align:right;color:var(--muted);font-size:10.5px;line-height:1.75}.contact a{color:var(--blue);text-decoration:none}
+h2{display:flex;align-items:center;gap:7px;font-size:12px;text-transform:uppercase;letter-spacing:1.05px;color:var(--navy);margin:12px 0 6px}
+h2:before{content:"";width:4px;height:15px;border-radius:4px;background:linear-gradient(var(--blue),var(--violet));display:inline-block}
 p{margin:3px 0}ul{margin:3px 0;padding-left:17px}li{margin:2px 0}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px}
-.job{display:flex;justify-content:space-between;gap:10px}.meta{color:#66707d;font-size:10.5px}.company{font-style:italic;color:#4f5965}
-.skills{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}.certs{display:grid;grid-template-columns:1fr 1fr;gap:5px 20px}
-.footer{text-align:center;color:#8a929d;font-size:9px;margin-top:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:7px 24px}
+.job{display:flex;justify-content:space-between;gap:12px}.role{font-weight:800;color:#202b45}.company{font-style:italic;color:var(--muted)}
+.meta{color:var(--blue);font-size:10px;font-weight:700;white-space:nowrap}
+.summary{background:linear-gradient(90deg,var(--soft),#fff);border-left:3px solid var(--blue);padding:8px 10px;border-radius:0 8px 8px 0}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px}
+.skillbox{background:#f8faff;border:1px solid #e3e9f5;border-radius:8px;padding:6px 8px}.skillbox b{color:var(--blue)}
+.certs{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
+.cert{background:linear-gradient(135deg,#f8faff,#fbf9ff);border:1px solid #e7e8f4;border-radius:8px;padding:6px 8px}.cert b{color:var(--violet)}
+.eduitem{padding:5px 8px;border-left:2px solid #dbe4ff}
+.badge{display:inline-block;background:#eef4ff;color:#2456c6;border:1px solid #d8e4ff;padding:2px 6px;border-radius:99px;font-size:9px;font-weight:800}
+.footer{text-align:center;color:#8993a3;font-size:8.5px;margin-top:10px;padding-top:7px;border-top:1px solid var(--line)}
 @media(max-width:600px){
 body{font-size:7.15px;line-height:1.25;background:#fff}
-.paper{width:100%;margin:0;padding:13px 14px;box-shadow:none}
-header{padding-bottom:6px;margin-bottom:7px}h1{font-size:17px;margin-bottom:2px}
-.contact{font-size:6.55px;line-height:1.5}
-h2{font-size:7.8px;letter-spacing:.7px;padding-bottom:2px;margin:6px 0 3px}
-.meta{font-size:6.3px}p{margin:2px 0}ul{padding-left:11px;margin:2px 0}li{margin:1px 0}
-.grid2,.skills,.certs{gap:3px 9px}.footer{font-size:5.7px;margin-top:6px}
+.paper{width:100%;margin:0;padding:12px 14px;border:0;border-radius:0;box-shadow:none}
+.paper:before{height:3px}
+header{padding:3px 0 7px;margin-bottom:6px;gap:10px}
+h1{font-size:18px;letter-spacing:-.5px;margin-bottom:3px}.tag{font-size:6.2px;letter-spacing:1px}
+.contact{font-size:6.35px;line-height:1.5}
+h2{font-size:7.8px;letter-spacing:.65px;margin:6px 0 3px;gap:4px}h2:before{width:3px;height:10px}
+.summary{padding:5px 7px;border-left-width:2px}
+p{margin:2px 0}ul{padding-left:11px;margin:2px 0}li{margin:1px 0}
+.grid2,.skills,.certs{gap:3px 9px}.meta{font-size:6.1px}
+.skillbox,.cert{padding:4px 5px;border-radius:5px}.badge{font-size:5.8px;padding:1px 4px}
+.footer{font-size:5.5px;margin-top:5px;padding-top:4px}
 }
-@media print{body{background:#fff}.paper{width:100%;margin:0;padding:16mm;box-shadow:none}}
+@media print{body{background:#fff}.paper{width:100%;margin:0;padding:15mm;box-shadow:none;border:0}}
 </style>
 </head>
 <body>
-<div class="paper">
+<main class="paper">
 <header>
+<div class="namebox">
+<div class="tag">Finance • Accounting • Business Operations</div>
 <h1>YASH AGARWAL</h1>
+<span class="badge">B.Com (Honours) · First Class</span>
+</div>
 <div class="contact">
-Kolkata, West Bengal, India | +91 6296548826 | yashag209@gmail.com<br>
-<a href="https://linkedin.com/in/yash-agarwal-8k">linkedin.com/in/yash-agarwal-8k</a> | Languages: English, Hindi
+Kolkata, West Bengal, India<br>
+<a href="tel:+916296548826">+91 6296548826</a> · <a href="mailto:yashag209@gmail.com">yashag209@gmail.com</a><br>
+<a href="https://linkedin.com/in/yash-agarwal-8k">linkedin.com/in/yash-agarwal-8k</a><br>
+English · Hindi
 </div>
 </header>
 
 <h2>Professional Summary</h2>
-<p>Motivated B.Com (Honours) graduate from St. Xavier's College (Autonomous), Kolkata with a strong foundation in accounting, finance, taxation, and business management. Strengthened analytical and financial knowledge through CA Inter examination preparation while gaining practical exposure by supporting operations in a family business. Skilled in MS Excel, financial reporting, business communication, and problem-solving, with a strong commitment to contributing effectively in a corporate setting.</p>
+<p class="summary">Motivated B.Com (Honours) graduate from St. Xavier's College (Autonomous), Kolkata with a strong foundation in accounting, finance, taxation, and business management. Strengthened analytical and financial knowledge through CA Inter examination preparation while gaining practical exposure by supporting operations in a family business. Skilled in MS Excel, financial reporting, business communication, and problem-solving, with a strong commitment to contributing effectively in a corporate setting.</p>
 
 <h2>Work Experience</h2>
-<div class="job"><div><b>Business Development and Operations Manager</b><br><span class="company">Rajesh Enterprises (MSME), Darjeeling, India</span></div><span class="meta">2024 – 2026</span></div>
-<ul>
-<li>Managed accounting, operations and invoice preparation efficiently utilizing Tally ERP.</li>
-<li>Handled high-frequency customer transactions and conducted financial analysis to evaluate store margins, optimize product pricing, and minimize operational wastage.</li>
-<li>Controlled working-capital intensity and significantly reduced stock variance through data-led inventory management tracking.</li>
-</ul>
+<div class="job"><div><span class="role">Business Development and Operations Manager</span><br><span class="company">Rajesh Enterprises (MSME), Darjeeling, India</span></div><span class="meta">2024 – 2026</span></div>
+<ul><li>Managed accounting, operations and invoice preparation efficiently utilizing Tally ERP.</li><li>Handled high-frequency customer transactions and conducted financial analysis to evaluate store margins, optimize product pricing, and minimize operational wastage.</li><li>Controlled working-capital intensity and significantly reduced stock variance through data-led inventory management tracking.</li></ul>
 
 <h2>Education</h2>
 <div class="grid2">
 <div>
-<p><b>St. Xavier's College (Autonomous)</b> <span class="meta">2021 – 2024</span><br>Kolkata, India — Bachelor of Commerce (Honours) — First Class (CGPA: 7.36)</p>
-<p class="meta">Relevant Coursework: Financial Accounting, Cost Accounting, Corporate Accounting, Financial Management, Income Tax, Auditing, Business Law, Economics, Statistics, Business Mathematics.</p>
-<p><b>St. Joseph's School, NorthPoint Darjeeling</b> <span class="meta">2021</span><br>Darjeeling, India — Senior Secondary (XII) – ISC | 88.4%</p>
+<div class="eduitem"><div class="job"><b>St. Xavier's College (Autonomous)</b><span class="meta">2021 – 2024</span></div>Kolkata, India — Bachelor of Commerce (Honours) — First Class (CGPA: 7.36)<br><span class="meta">Relevant Coursework:</span> Financial Accounting, Cost Accounting, Corporate Accounting, Financial Management, Income Tax, Auditing, Business Law, Economics, Statistics, Business Mathematics.</div>
+<div class="eduitem"><div class="job"><b>St. Joseph's School, NorthPoint Darjeeling</b><span class="meta">2021</span></div>Darjeeling, India — Senior Secondary (XII) – ISC | 88.4%</div>
 </div>
 <div>
-<p><b>Goethals Memorial School</b> <span class="meta">2019</span><br>Kurseong, India — Secondary (X) – ICSE | 91.83%</p>
+<div class="eduitem"><div class="job"><b>Goethals Memorial School</b><span class="meta">2019</span></div>Kurseong, India — Secondary (X) – ICSE | 91.83%</div>
 </div>
 </div>
 
 <h2>Skills & Competencies</h2>
 <div class="skills">
-<div><b>Accounting & Finance:</b> Financial Accounting, Cost Accounting, Corporate Accounting, Financial Statement Analysis, Income Tax, Auditing, Risk Management, Accounts Payables, Accounts Receivables</div>
-<div><b>Technical & Software:</b> MS Excel (Advanced Charts & Dashboards), MS Word, MS PowerPoint, MS Office, Tally ERP, Basic SQL, SPSS, Data Validation, HTML</div>
-<div><b>Soft Skills:</b> Business Communication, Teamwork, Analytical Thinking, Problem Solving, Adaptability, Attention to Detail, Professional Ethics</div>
+<div class="skillbox"><b>Accounting & Finance</b><br>Financial Accounting, Cost Accounting, Corporate Accounting, Financial Statement Analysis, Income Tax, Auditing, Risk Management, Accounts Payables, Accounts Receivables</div>
+<div class="skillbox"><b>Technical & Software</b><br>MS Excel (Advanced Charts & Dashboards), MS Word, MS PowerPoint, MS Office, Tally ERP, Basic SQL, SPSS, Data Validation, HTML</div>
+<div class="skillbox"><b>Soft Skills</b><br>Business Communication, Teamwork, Analytical Thinking, Problem Solving, Adaptability, Attention to Detail, Professional Ethics</div>
 </div>
 
 <h2>Certifications & Training</h2>
 <div class="certs">
-<div><b>Taxation & Finance:</b> Taxation Fundamentals and GST, Banking & Finance, Data Validation.</div>
-<div><b>Virtual Job Simulations:</b> Internal Audit Job Simulations (EY & Goldman Sachs via Forage), Investment Banking Job Simulation (Bank of America via Forage).</div>
-<div><b>Professional Skills:</b> TCS iON Career Edge – Young Professional (Etiquette, IT Fundamentals, Problem Solving), TCS iON Understanding Risk Management in Financial Sector.</div>
-<div><b>Digital & Market Awareness:</b> Fundamentals of Digital Marketing (Google Intellum), NISM-SEBI Investor Awareness Test.</div>
+<div class="cert"><b>Taxation & Finance:</b> Taxation Fundamentals and GST, Banking & Finance, Data Validation.</div>
+<div class="cert"><b>Virtual Job Simulations:</b> Internal Audit Job Simulations (EY & Goldman Sachs via Forage), Investment Banking Job Simulation (Bank of America via Forage).</div>
+<div class="cert"><b>Professional Skills:</b> TCS iON Career Edge – Young Professional (Etiquette, IT Fundamentals, Problem Solving), TCS iON Understanding Risk Management in Financial Sector.</div>
+<div class="cert"><b>Digital & Market Awareness:</b> Fundamentals of Digital Marketing (Google Intellum), NISM-SEBI Investor Awareness Test.</div>
 </div>
 
 <h2>Projects & Extracurricular Leadership</h2>
@@ -84,6 +102,6 @@ Kolkata, West Bengal, India | +91 6296548826 | yashag209@gmail.com<br>
 <li><b>Community Service:</b> Volunteer Assistant at Bestfriendz Society NGO, Kolkata. (5 months)</li>
 </ul>
 <div class="footer">Yash Agarwal · Resume</div>
-</div>
+</main>
 </body>
 </html>
