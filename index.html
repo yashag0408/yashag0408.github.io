@@ -17,7 +17,7 @@
   --green:#2e8a58;      --green-soft:#e7f5ec;
 
   --page-1:#c7cbd3;     --page-2:#dfe2e7;
-  --paper:#aeb3bd;      /* rich grey inner background, replaces white */
+  --paper:#dde0e5;      /* rich grey inner background, replaces white */
   --card:#ffffff;
   --card-line:#dadde3;
   --line:#d7dae0;
@@ -25,10 +25,7 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{
-  background:
-    radial-gradient(circle at 10% 0%,rgba(255,255,255,.35),transparent 40%),
-    radial-gradient(circle at 90% 100%,rgba(0,0,0,.12),transparent 45%),
-    linear-gradient(150deg,var(--page-1) 0%,var(--page-2) 55%,var(--page-1) 100%);
+  background:#ffffff;
   color:var(--ink);
   font-family:"Inter",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
   font-size:13.5px;line-height:1.45;
@@ -57,7 +54,7 @@ body{
   content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;
   background:radial-gradient(circle,rgba(106,79,196,.35),transparent 70%);
 }
-.header-grid{display:grid;grid-template-columns:1fr 96px;gap:22px;align-items:center;position:relative;z-index:1}
+.header-grid{display:grid;grid-template-columns:1fr 122px;gap:22px;align-items:center;position:relative;z-index:1}
 .kicker{
   display:inline-flex;align-items:center;gap:6px;font-size:9px;text-transform:uppercase;letter-spacing:1.8px;
   font-weight:700;color:#bcd0ff;margin-bottom:7px;
@@ -81,7 +78,7 @@ h1{font-size:31px;line-height:1.05;margin:0 0 6px;letter-spacing:-.5px;color:#ff
 .pill.c3 .ic{background:linear-gradient(135deg,#a67a20,#af4568)}
 .pill.c4 .ic{background:linear-gradient(135deg,#6a4fc4,#af4568)}
 .pill.c5 .ic{background:linear-gradient(135deg,#2e8a58,#0f7f80)}
-.photo-wrap{width:96px;height:96px;border-radius:50%;padding:3px;
+.photo-wrap{width:122px;height:122px;border-radius:50%;padding:3px;
   background:conic-gradient(from 210deg,#3563b0,#6a4fc4,#0f7f80,#a67a20,#af4568,#3563b0);
   justify-self:center;box-shadow:0 8px 20px rgba(0,0,0,.35);
 }
@@ -194,7 +191,7 @@ li::before{
   .paper{border-radius:0;box-shadow:none;width:100%}
   .spine{width:4px}
   .header{padding:14px 12px 12px 15px}
-  .header-grid{grid-template-columns:1fr 58px;gap:10px}
+  .header-grid{grid-template-columns:1fr 74px;gap:10px}
   .kicker{font-size:6.6px;letter-spacing:1px;margin-bottom:4px}
   .kicker svg{width:8px;height:8px}
   h1{font-size:19px;margin-bottom:3px}
@@ -203,7 +200,7 @@ li::before{
   .pill{font-size:7px;padding:3px 7px 3px 4px;gap:3px}
   .pill .ic{width:12px;height:12px}
   .pill svg{width:6.5px;height:6.5px}
-  .photo-wrap{width:58px;height:58px;padding:2px}
+  .photo-wrap{width:74px;height:74px;padding:2px}
   .photo{border-width:2px}
 
   .inner{padding:10px 12px 12px}
@@ -249,7 +246,7 @@ li::before{
 /* ============ DESKTOP / LAPTOP: look like a printed PDF page ============ */
 @media (min-width:601px){
   .page-wrap{padding:34px 16px}
-  .paper{width:850px;aspect-ratio:850/1100;overflow-y:auto}
+  .paper{width:850px}
 }
 
 /* ============ actual browser print ============ */
